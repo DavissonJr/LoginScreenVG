@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Screen - VG TECH SOLUTIONS TEST</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <div class="left">
+        <h1>Welcome<br>Back!</h1>
+        <i class="fa-brands fa-instagram" id="ig-icon"></i>
+        <i class="fa-solid fa-x" id="tt-icon"></i>
+      </div>
+      <div class="right">
+        <div class="login-box">
+          <h2>Login</h2>
+          <p>Welcome back! Please login to your account.</p>
+          <form id="login-form">
+            <label for="username">Email</label>
+            <input type="email" id="username" placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <i class="fa-solid fa-eye" id="eye"></i>
+            <div class="options">
+              <label>
+                <input type="checkbox" id="remember-me">
+                <span>Remember</span>
+              </label>
+              <p>Forgot Password?</p>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <p>Don't have a login? <a href="#">Signup</a></p>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
