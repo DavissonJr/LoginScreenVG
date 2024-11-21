@@ -3,15 +3,18 @@ const password = document.getElementById('password').value;
 const passwordInput = document.getElementById('password');
 const eye = document.getElementById('eye');
 
-// tirar reload
+
 
 document.getElementById('login-form').addEventListener('submit', (event)=> {
+// salvando username e passowrd só caso seja necessário
+const username = document.getElementById('username').value;
+const password = document.getElementById('password').value;
 event.preventDefault();
 });
 
-// trocar olho e ocultar senha
 
-const showPassword = () => {
+
+const togglePasswordVibility = () => {
     if (passwordInput.type === 'password') {
         passwordInput.setAttribute('type', 'text');
         eye.classList.replace('fa-eye', 'fa-eye-slash'); 
@@ -21,7 +24,7 @@ const showPassword = () => {
     }
 };
 
-eye.addEventListener('click', showPassword);
+eye.addEventListener('click', togglePasswordVibility);
 
 document.getElementById('ig-icon').addEventListener('click',()=>{
     window.open("https://www.instagram.com/vgtech_solutions/", "_blank");
