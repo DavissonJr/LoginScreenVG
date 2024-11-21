@@ -302,8 +302,12 @@ input:valid{
 
     .left i{
         position: relative;
-        left: 100px;
+        left: 68gpx;
         top: 70px;
         font-size: 1.5em;
+    }
+
+    #eye{
+        display: none;
     }
 }
